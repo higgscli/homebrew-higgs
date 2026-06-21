@@ -1,5 +1,5 @@
 class Higgs < Formula
-  desc "Agent-first CLI for Proton Mail — schema manifest, NDJSON, typed errors, stable exit codes"
+  desc "Agent-first CLI for Proton Mail with schema, NDJSON and typed errors"
   homepage "https://github.com/higgscli/higgs"
   version "1.0.4"
   license "Apache-2.0"
