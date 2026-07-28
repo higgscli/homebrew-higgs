@@ -5,21 +5,21 @@
 class Higgs < Formula
   desc "Agent-first CLI for Proton Mail with schema, NDJSON and typed errors"
   homepage "https://github.com/higgscli/higgs"
-  version "1.2.1"
+  version "1.2.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/higgscli/higgs/releases/download/v1.2.1/higgs_1.2.1_darwin_amd64.tar.gz"
-      sha256 "25c588d20ac4d39b4a9d53020e6add265c344aeff7cd4694e08b65dcbacb9818"
+      url "https://github.com/higgscli/higgs/releases/download/v1.2.2/higgs_1.2.2_darwin_amd64.tar.gz"
+      sha256 "b806305743f16777271b2ef9f8193bf44046cc802488d08555121ad6a01df138"
 
       define_method(:install) do
         bin.install "higgs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/higgscli/higgs/releases/download/v1.2.1/higgs_1.2.1_darwin_arm64.tar.gz"
-      sha256 "5b9bd0825e4ee7cf841ae63f4e0b83f3c46ced8885a222dc6c5e6323a79ec5c8"
+      url "https://github.com/higgscli/higgs/releases/download/v1.2.2/higgs_1.2.2_darwin_arm64.tar.gz"
+      sha256 "de0fcd383ad48941a0216b2175ca4ff91339e47d5f36abe0fe521ebe79e138c4"
 
       define_method(:install) do
         bin.install "higgs"
@@ -29,15 +29,15 @@ class Higgs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/higgscli/higgs/releases/download/v1.2.1/higgs_1.2.1_linux_amd64.tar.gz"
-      sha256 "637b56722ad83384b7da4e61e566c3c08e9a39754006ebf03c2ea1d550cd0cc5"
+      url "https://github.com/higgscli/higgs/releases/download/v1.2.2/higgs_1.2.2_linux_amd64.tar.gz"
+      sha256 "a03092707a705ac89196718afc75791568f54cf8a39e13b62c4f9f86979301af"
       define_method(:install) do
         bin.install "higgs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/higgscli/higgs/releases/download/v1.2.1/higgs_1.2.1_linux_arm64.tar.gz"
-      sha256 "3c5157ea982cbb2ac4bddb192ab82423d089bf1b09d10881ad5e78596a68a97c"
+      url "https://github.com/higgscli/higgs/releases/download/v1.2.2/higgs_1.2.2_linux_arm64.tar.gz"
+      sha256 "39394f263dbb63beee5ed82ae6fc6866036d8e7d5f22882835f05f56b68e6a71"
       define_method(:install) do
         bin.install "higgs"
       end
